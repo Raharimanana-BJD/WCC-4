@@ -1,0 +1,20 @@
+.blur {
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: var(--clr-accent);
+    filter: blur(3.5em);
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}
+
+.blur-bg {
+    position: absolute;
+    inset: 0;
+    height: 200vh;
+    display: none;
+}
+.blur-bg.active {
+    display: block;
+    backdrop-filter: blur(3px);
+}

@@ -1,0 +1,60 @@
+main {
+    margin-bottom: 3rem;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.5rem;
+    @media (max-width: 965px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero-img img {
+        width: 430px;
+    }
+}
+
+.description {
+    width: 36ch;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }    
+}
+
+.big-price {
+    font-size: var(--fs-500);
+}
+.price-line-through {
+    text-decoration: line-through;
+}
+
+.indicators {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3rem;
+    span {
+        display: inline-block;
+        height: 3px;
+        width: 8px;
+        border-radius: 20px;
+        background-color: var(--clr-neutral-300);
+        &.active {
+            width: 32px;
+            background-color: var(--clr-accent);
+        }
+        &.semi-active {
+            width: 15px;
+        }
+    }
+}

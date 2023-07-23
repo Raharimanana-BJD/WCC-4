@@ -1,0 +1,32 @@
+:root {
+    --clr-primary: #000000;
+    
+    --clr-accent: #FFDA80;
+
+    --clr-neutral-100: #FFFFFF;
+    --clr-neutral-200: #f1f1f1;
+    --clr-neutral-300: #ADB2A2;
+
+    --fs-700: 3rem;
+    --fs-600: 2.4rem;
+    --fs-500: 2rem;
+    --fs-400: 1.5rem;
+    --fs-300: 1rem;
+    --fs-200: .9rem;
+
+    --fs-body: var(--fs-300);
+    --fs-primary-heading: var(--fs-700);
+    --fs-btn: var(--fs-400); 
+
+    --fw-regular: 'Caros Regular';
+    --fw-medium: 'Caros Medium';
+    --fw-bold: 'Caros Bold';
+}
+
+@media (max-width: 50em) {
+    :root {
+        --fs-body: var(--fs-200);
+        --fs-primary-heading: var(--fs-600);
+        --fs-btn: var(--fs-300);
+    }
+}

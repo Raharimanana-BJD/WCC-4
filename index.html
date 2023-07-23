@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fode</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <svg class="wave" width="46" height="35" viewBox="0 0 46 35" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 23C3.16667 23.8333 8.3 24 11.5 18C15.5 10.5 15 11.5 21 12C27 12.5 31 9.5 32 6C33 2.5 34 1 39.5 1"/>
+      <path d="M7 33C9.16667 33.8333 14.3 34 17.5 28C21.5 20.5 21 21.5 27 22C33 22.5 37 19.5 38 16C39 12.5 40 11 45.5 11"/>
+    </svg>
+    <img class="bg" src="./src/assets/img/BackGround.png" alt="">
+    <div class="blur"></div>
+    <img src="./src//assets/img/cherviette.png" class="serviette">
+    <img src="./src/assets/img/plante.png" class="plante">
+    <div class="blur-bg"></div>
+    <header class="primary-header">
+      <div class="container">
+        <div class="logo">
+          <h1 class="fs-primary-heading fw-bold">Fode</h1>
+          <span class="logoCircle"></span>
+        </div>
+        <div class="search-box">
+          <button type="button" data-search="search" class="btn-search">
+            <img src="./src/assets/img/search.svg" alt="" />
+          </button>
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Type to Search..."
+          />
+        </div>
+        <div class="hamburger-menu">
+          <button class="toggle-menu">
+            <svg class="hamburger" viewBox="0 0 100 100" >
+              <line
+                class="line top"
+                x1="90"
+                x2="10"
+                y1="40"
+                y2="40"
+                stroke-width="10"
+                stroke-linecap="round"
+                stroke-dasharray="80"
+                stroke-dashoffset="0"
+              ></line>
+              <line
+                class="line bottom"
+                x1="10"
+                x2="90"
+                y1="60"
+                y2="60"
+                color="black"
+                stroke-width="10"
+                stroke-linecap="round"
+                stroke-dasharray="80"
+                stroke-dashoffset="0"
+              ></line>
+            </svg>
+          </button>
+       </div>
+        <div class="header-right">
+          
+          <nav>
+            <ul class="primary-navigation">
+              <li class="active">
+                <img src="./src/assets/img/a.svg" alt="a" width="13" />
+                <a href="#" class="fs-body fw-medium">Why Fode?</a>
+              </li>
+              <li>
+                <img src="./src/assets/img/a.svg" alt="a" width="13" />
+                <a href="#" class="fs-body fw-medium">About</a>
+              </li>
+              <li>
+                <img src="./src/assets/img/a.svg" alt="a" width="13" />
+                <a href="#" class="fs-body fw-medium">Menu</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="authentificationBox">
+            <button class="signIn | button-1 fs-body fw-medium">Sign In</button>
+            <button class="login | button-1 fs-body fw-medium">Login</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="fw-regular fs-primary-heading">Italian Pasta</h1>
+          <h1 class="fw-bold fs-primary-heading">With Special Sauce</h1>
+          <p class="description | fw-regular text-neutral-300">
+            Italian pasta with a special sauce is a flavor you can find only in <span class="fw-bold text-primary">fode.</span>
+          </p>
+          <div class="cta">
+              <div class="price">
+                <p class="price-line-through | fw-regular text-neutral-300">$7,90</p>
+                <p class="big-price fw-regular">$7.90</p>
+              </div>
+              <button class="buyBtn bg-primary fw-medium fs-btn">
+                <div class="shopIcon">
+                  <img src="./src/assets/img/shopping-bag.png" alt="shopping-bag" width="20">
+                </div>
+                <span>Buy Now</span>
+              </button>
+          </div>  
+          <div class="indicators">
+            <span class="active"></span>
+            <span class="semi-active"></span>
+            <span></span>
+          </div>
+          <div class="button-donto">
+            <img src="./src/assets/img/chief.png" alt="chief">  
+            <div>
+              <p class="fw-regular">Chef's Recommendation</p>
+              <p class="fw-bold">See the menu types</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img">
+            <img src="./src/assets/img/kali.png" alt="kali">
+            <div class="menu-carousel">
+              <header class="menu-header">
+                <div class="title">
+                  <h3 class="fw-regular fs-body">Discount coupon</h3>
+                </div>
+                <div class="prev-and-next">
+                  <div class="prev">
+                    <span class="fw-regular">Prev</span>
+                  </div>
+                  <div class="next">
+                    <span class="fw-regular">Next</span>
+                  </div>
+                </div>
+              </header>
+              <div class="menu-content">
+                <div class="menu-kaly">
+                  <h3 class="fw-regular fs-btn">Mexicoo Pizza</h3>
+                  <div class="flex">
+                    <img src="./src/assets/img/fire.png" alt="fire" >
+                    <span class="fw-regular">
+                       78 calories
+                    </span>
+                  </div>
+                </div>
+                <div class="prices">
+                  <p class="price-line-through  text-accent fw-regular">$7,90</p>
+                  <p class="fs-btn fw-regular">$7.90</p>
+                </div>
+                <div class="date">
+                  <img src="./src/assets/img/clock.png" alt="clock">
+                  <span>30 dk.</span>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </main>
+  </body>
+</html>

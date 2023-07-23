@@ -1,0 +1,9 @@
+.plante {
+    position: absolute;
+    width: 120px;
+    bottom: -120px;
+    left: -70px;
+    @media (max-width: 460px) {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+body {
+    // height: 100vh;
+    // background-color: #000000;
+    background: var(--clr-neutral-100);
+    overflow-x: hidden;
+}
+
+.bg {
+    // display: none;
+    position: absolute;
+    z-index: -11111;
+    width: 1000px;
+    top: -150px;
+    right: -20px;
+    @media (max-width: 1250px) {
+        display: none;
+    }
+}

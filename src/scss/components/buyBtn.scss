@@ -1,0 +1,38 @@
+.buyBtn {
+    padding: 1rem;
+    color: var(--clr-neutral-100);
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 250px;
+    cursor: pointer;
+    box-shadow: 12px 15px 15px #00000024;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: #444444;
+    }
+    &.active span {
+        transform: translateX(-5px);
+    } 
+    &.active .shopIcon {
+        transform: translateX(180px);
+    }
+    span {
+        transition: all .3s ease-in-out;
+    }
+}
+
+.shopIcon {
+    background-color: var(--clr-accent);
+    // padding: .6rem;
+    width: 35px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    transition: all .3s ease-in-out;
+}

@@ -1,0 +1,65 @@
+// hamburger
+.hamburger-menu {
+    display: none;
+    z-index: 99999999;
+    @media (max-width: 965px) {
+        display: inline-block;
+    }
+}
+.toggle-menu {
+    padding: .2rem;
+    background: none;
+    cursor: pointer;
+    border: none;
+    .hamburger {
+        width: 40px;
+    }
+    .line {
+      stroke: var(--clr-accent);
+      animation: to-open-icon .5s forwards;
+      &.top {
+        --rotation: -45deg;
+        transform-origin: 65px 45px;
+      }
+      &.bottom {
+        --rotation: 45deg;
+        transform-origin: 60px 55px;
+      }
+    }
+    &.active .line {
+      animation: to-close-icon .5s forwards;
+    }
+    @keyframes to-close-icon {
+      0% {
+        stroke-dashoffset: 0;
+      }
+      40% {
+        stroke-dashoffset: 79.9;
+      }
+      60% {
+        stroke-dashoffset: 79.9;
+        rotate: var(--rotation);
+      }
+      100% {
+        stroke-dashoffset: 0;
+        rotate: var(--rotation);
+      }
+    }
+    @keyframes to-open-icon {
+      0% {
+        stroke-dashoffset: 0;
+        rotate: var(--rotation);
+      }
+      40% {
+        stroke-dashoffset: 79.9;
+        rotate: var(--rotation);
+      }
+      60% {
+        stroke-dashoffset: 79.9;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  

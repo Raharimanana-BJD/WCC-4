@@ -1,0 +1,11 @@
+.serviette {
+    position: absolute;
+    width: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.266);
+    bottom: 3%;
+    left: -50px; 
+    transform: rotate(-45deg);
+    @media (max-width: 460px) {
+        display: none;
+    }
+}

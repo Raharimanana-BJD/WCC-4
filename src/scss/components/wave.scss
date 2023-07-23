@@ -1,0 +1,22 @@
+
+.wave {
+    fill: transparent;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+    cursor: pointer;
+    stroke-width: 1.83px;
+    stroke: black;
+    animation: wave 2s linear infinite;
+
+    position: absolute;
+    top: 190px;
+    left: 70px;
+}
+  
+  @keyframes wave {
+    0%{
+        stroke-dashoffset: 0;
+    }100%{
+        stroke-dashoffset: -100;
+    }
+  }

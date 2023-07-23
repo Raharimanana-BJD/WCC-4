@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Caros Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Caros Regular"),
+    url("../assets/font/cretype_Caros.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Caros Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Caros Medium"),
+    url("../assets/font/cretype_Caros_Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Caros Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Caros Bold"),
+    url("../assets/font/cretype_Caros_Bold.woff") format("woff");
+}
